@@ -13,6 +13,8 @@ services:
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - mysql-data:/var/lib/mysql
     ports:
       - "3306:3306"
     restart: always
@@ -29,11 +31,16 @@ services:
     volumes:
       - ./www:/var/www/html
     links:
-      - mysql
+      - backend
 
   backend:
     container_name: ${COMPOSE_PROJECT_NAME}-backend
     image: 150389upslp/tutorias:backend
+    volumes:
+      - mysql-data:/var/lib/mysql
     ports:
       - "3306:3306"
     restart: always
+
+volumes:
+  mysql-data:
