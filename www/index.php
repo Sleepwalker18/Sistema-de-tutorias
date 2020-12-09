@@ -195,3 +195,9 @@
 
 </body>
 </html>
+
+<?php
+    if(isset($_GET['msg'])) {
+        echo "<script>Datos ingresados: ".$_GET['msg']."</script>";
+    }
+?>

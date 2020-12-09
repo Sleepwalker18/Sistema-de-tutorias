@@ -34,6 +34,6 @@ mysqli_query($conn, $sql);
 
 mysqli_close($conn);
 
-header('Location: http://localhost');
+header('Location: http://localhost?msg='.$nombre);
 
 ?>
