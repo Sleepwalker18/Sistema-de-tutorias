@@ -1,5 +1,5 @@
 <?php
-$usuario=$_POST['id_user'];
+$usuario=$_POST['usuario'];
 $contraseña=$_POST['password'];
 session_start();
 $_SESSION['id']=$usuario;
@@ -7,7 +7,7 @@ $_SESSION['id']=$usuario;
 
 $conexion=mysqli_connect("localhost","root","","dbname");
 
-$consulta="SELECT*FROM usuario where id_user=\'$usuario\' and password=\'$contraseña\'";
+$consulta="SELECT*FROM usuario where usuario=\'$usuario\' and password=\'$contraseña\'";
 $resultado=mysqli_query($conexion,$consulta);
 
 $filas=mysqli_num_rows($resultado);
