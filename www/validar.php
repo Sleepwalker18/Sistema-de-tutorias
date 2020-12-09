@@ -1,5 +1,4 @@
 <?php
-include('db.php');
 $usuario=$_POST['id'];
 $contraseña=$_POST['password'];
 session_start();
