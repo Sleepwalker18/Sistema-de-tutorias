@@ -186,6 +186,7 @@
                                             $respuestas = mysqli_query($conn,$sql);
                                             if(mysqli_num_rows($respuestas) > 0){
                                                 while($respuesta = mysqli_fetch_assoc($respuestas)){
+                                                    echo "<tr>";
                                                     echo "<td>".$respuesta['proyecto_personal']."</td>";
                                                     echo "<td>".$respuesta['fortaleza1']."</td>";
                                                     echo "<td>".$respuesta['fortaleza2']."</td>";
@@ -199,6 +200,7 @@
                                                         echo "<td>No</td>";
                                                     }
                                                     echo "<td>".$respuesta['describir_proyecto']."</td>";
+                                                    echo "</tr>";
                                                 }
                                             }
                                             else{

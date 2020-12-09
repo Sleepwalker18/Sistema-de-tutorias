@@ -176,12 +176,14 @@
                                             $respuestas = mysqli_query($conn,$sql);
                                             if(mysqli_num_rows($respuestas) > 0){
                                                 while($respuesta = mysqli_fetch_assoc($respuestas)){
+                                                    echo "<tr>";
                                                     echo "<td><a href='respuestas.php?matricula=".$respuesta['matricula']."'>".$respuesta['matricula']."</a></td>";
                                                     echo "<td>".$respuesta['nombre']."</td>";
                                                     echo "<td>".$respuesta['edad']."</td>";
                                                     echo "<td>".$respuesta['carrera']."</td>";
                                                     echo "<td>".$respuesta['semestre']."</td>";
                                                     echo "<td>".$respuesta['grupo']."</td>";
+                                                    echo "</tr>";
                                                 }
                                             }
                                             else{
