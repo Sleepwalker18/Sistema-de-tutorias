@@ -4,10 +4,10 @@ $contraseña=$_POST['password'];
 session_start();
 
 
-$conexion=mysqli_connect("localhost","dbuser","dbpass","dbname");
+$conexion=mysqli_connect("tutorias-backend","dbuser","dbpass","dbname");
 
 $consulta="SELECT * FROM usuarios where usuario='$usuario' and password='$contraseña'";
-echo "$consulta";
+
 $resultado=mysqli_query($conexion,$consulta);
 
 $filas=mysqli_num_rows($resultado);

@@ -1,5 +1,5 @@
 <?php
-	$servidor = "localhost";
+	$servidor = "tutorias-backend";
 	$usuario = "dbuser";
 	$password = "dbpass";
 	$db = "dbname";
