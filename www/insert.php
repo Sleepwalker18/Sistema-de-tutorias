@@ -34,6 +34,6 @@ mysqli_query($conn, $sql);
 
 mysqli_close($conn);
 
-header('Location: http://localhost?msg='.$nombre);
+header('Location: http://localhost?msg=Operación%20realizada%20con%20éxito');
 
 ?>

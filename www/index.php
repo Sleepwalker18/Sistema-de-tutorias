@@ -198,6 +198,6 @@
 
 <?php
     if(isset($_GET['msg'])) {
-        echo "<script>Datos ingresados: ".$_GET['msg']."</script>";
+        echo "<script>alert('".$_GET['msg']."');</script>";
     }
 ?>
