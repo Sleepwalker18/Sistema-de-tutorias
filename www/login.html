@@ -18,11 +18,11 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-upslp">
 
     <div class="container">
 
@@ -39,24 +39,24 @@
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Log In</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Sistema de tutorías - Log In</h1>
                                     </div>
                                     <form action="validar.php" method="post" class="user">
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-user"
+                                            <input name="usuario" type="text" class="form-control form-control-user"
                                                 aria-describedby="emailHelp" placeholder="Usuario">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                placeholder="Password">
+                                            <input name="password" type="password"
+                                                class="form-control form-control-user" placeholder="Password">
                                         </div>
                                         <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
+                                            <!-- <div class="custom-control custom-checkbox small">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck">
                                                 <label class="custom-control-label" for="customCheck">Recuerdame</label>
-                                            </div>
+                                            </div> -->
                                         </div>
-                                        <center><input type="submit" value="Ingresar" ></center>
+                                        <center><input type="submit" class="btn btn-primary btn-user btn-block" value="Ingresar"></center>
                                         <hr>
                                     </form>
                                 </div>
