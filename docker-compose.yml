@@ -7,7 +7,6 @@ services:
       args:
         mysql_version: ${MYSQL_VERSION}
     container_name: ${COMPOSE_PROJECT_NAME}-mysql
-    image: 150389upslp/tutorias:back
     environment:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
