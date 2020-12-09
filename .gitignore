@@ -4,6 +4,3 @@
 
 # editor files
 .idea*
-
-# composer vendor files
-vendor/
