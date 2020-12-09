@@ -1,4 +1,3 @@
-CREATE DATABASE dbname;
 USE dbname;
 CREATE TABLE usuarios (
 	id_usuario integer NOT NULL AUTO_INCREMENT,
