@@ -57,6 +57,17 @@
 </head>
 
 <body class="bg-gradient-primary">
+    <nav class="navbar navbar-white bg-white justify-content-between">
+      <div class="navbar-brand">
+        <img src="/img/upslp-whitelogo.jpg" width="100px;" />
+      </div>
+      <div style="font-size: 25px; color: #ed7f00;">
+          Sistema de tutorías
+      </div>
+      <div class="form-inline">
+        <a class="btn btn-primary my-2 my-sm-0" href="dashboard.php" role="button" style="margin-top: 8px;">Login</a>
+      </div>
+    </nav>
     <div class="container">
         <div class="card o-hidden border-0 shadow-lg my-5">
             <div class="card-body p-0">
@@ -65,7 +76,6 @@
                     <div class="col-lg-5 d-none d-lg-block bg-register-image">
                     </div>
                     <div class="col-lg-7">
-                        <a class="btn btn-success" href="dashboard.php" role="button" style="margin-top: 8px;">Dashboard</a>
                         <div class="p-5">
                             <div class="text-center">
                                 <h1 class="text-gray-900 mb-4">Proyecto de Vida</h1>
